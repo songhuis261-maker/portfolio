@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=800px">
+	<title>카드뉴스</title>
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="../../img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+	<div id="wrap">
+		<div class="title">
+			<h2>부산에 가볼만한 곳</h2>
+			<p>
+				오션뷰 기장카페 BEST 4
+			</p>
+		</div>
+		<div id="cardnews_wrap">
+			<!-- Swiper -->
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/0.jpg" alt="카드뉴스">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/1.jpg" alt="카드뉴스">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/2.jpg" alt="카드뉴스">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/3.jpg" alt="카드뉴스">
+					</div>
+					<div class="swiper-slide">
+						<img src="images/4.jpg" alt="카드뉴스">
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<!-- <div class="swiper-pagination"></div> -->
+		</div>
+		<div class="fixed2">
+			<a href="../index.html#projects" onclick="window.close()"><img src="images/back.png" alt="back"></a>
+		</div>
+	</div>
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			grabCursor: true,
+			effect: "creative",
+			loop: true,
+			pagination: {
+				el: ".swiper-pagination",
+				type: "fraction",
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			creativeEffect: {
+				prev: {
+					shadow: true,
+					translate: [0, 0, -400],
+				},
+				next: {
+					translate: ["100%", 0, 0],
+				},
+			},
+		});
+	</script>
+
+</body>
+
+</html>
